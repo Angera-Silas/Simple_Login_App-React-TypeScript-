@@ -2,16 +2,12 @@ import React from 'react';
 import { Container, Typography, Box, AppBar, Tabs, Tab } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-const HomePage: React.FC = () => {
-    const queryParams = new URLSearchParams(window.location.search);
-    const name = queryParams.get('name');
-    const age = queryParams.get('age');
+const ContactMe: React.FC = () => {
     const navigate = useNavigate();
 
     const handleTabChange = (event: React.ChangeEvent<{}>, newValue: string) => {
         navigate(newValue);
     };
-
     return (
         <Container maxWidth="sm">
             <AppBar position="static" style={{ backgroundColor: 'blue' }}>
@@ -24,14 +20,20 @@ const HomePage: React.FC = () => {
             </AppBar>
             <Box mt={5}>
                 <Typography variant="h4" gutterBottom>
-                    Welcome, {name}
+                    Contact Me
                 </Typography>
-                <Typography variant="h6">
-                    Your age is: {age}
+                <Typography variant="body1">
+                    You can reach me at:
+                </Typography>
+                <Typography variant="body1">
+                    Email: angerasilas@gmail.com
+                </Typography>
+                <Typography variant="body1">
+                    Phone: (254) 797 630228                
                 </Typography>
             </Box>
         </Container>
     );
 };
 
-export default HomePage;
+export default ContactMe;
