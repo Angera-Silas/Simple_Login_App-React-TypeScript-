@@ -4,6 +4,7 @@ import LoginPage from './LoginPage';
 import HomePage from './HomePage';
 import AboutUs from './AboutUs';
 import ContactMe from './ContactMe';
+import Logout from './Logout';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactMe />} />
+        <Route path="/logout" element={<Logout />} />
       </Routes>
     </Router>
   );

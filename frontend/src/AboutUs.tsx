@@ -15,7 +15,7 @@ const AboutUs: React.FC = () => {
                     <Tab label="Home" value="/home" />
                     <Tab label="About Us" value="/about" />
                     <Tab label="Contact Me" value="/contact" />
-                    <Tab label="Logout" value="/" />
+                    <Tab label="Logout" value="/logout" />
                 </Tabs>
             </AppBar>
             <Box 
