@@ -18,7 +18,14 @@ const ContactMe: React.FC = () => {
                     <Tab label="Logout" value="/" />
                 </Tabs>
             </AppBar>
-            <Box mt={5}>
+            <Box mt={5}
+                p={3}
+                sx={{
+                    background: 'linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)', // Gradient background
+                    borderRadius: '15px', // Rounded corners
+                    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)', // Shadow for depth
+                    color: 'white', // Text color
+                }}>
                 <Typography variant="h4" gutterBottom>
                     Contact Me
                 </Typography>
